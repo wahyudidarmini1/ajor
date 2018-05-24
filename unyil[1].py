@@ -235,6 +235,7 @@ MPublic = """
 ║POWER║RANGER║PUBLIC
 ════════════════
 ║╠[👿]Me
+║╠[👿]Creator
 ║╠[👿]Creator1
 ║╠[👿]Creator2
 ║╠[👿]Creator3
@@ -276,27 +277,27 @@ mid10 = k10.getProfile().mid
 midkoplaxs = koplaxs.getProfile().mid
 
 Bots=[mid,mid2,mid3,mid4,mid5,mid6,mid7,mid8,mid9,mid10]
-owner=["u1112a364f49ad61d6ca5ec5bc9d6d375","ued156c86ffa56024c0acba16f7889e6d","u88cd7ee9fd691d6306e5e19be5d16f69"] 
+owner=["u6b34b703cbc5fc83cd1e5b6832a05352"] 
 admin=[
-  "u1112a364f49ad61d6ca5ec5bc9d6d375", #Fadlan
-  "u61e7226d767ed789511ddaecafdc9e62", #Kak Fyfy
-  "ubfb4ddb05b6d5a05215083404887ab85", #Bg Aroel
-  "uff311a7f8eb86f0bdac17beb82626137"] ##Bg Ressa
+  "u6b34b703cbc5fc83cd1e5b6832a05352", #Fadlan
+  #"", #Kak Fyfy
+  #"", #Bg Aroel
+  #""] ##Bg Ressa
   #"", #Crz
   #"", #Blue
   #""] #Admin Event
 staff=[
-  "u1b109c6de9d2eaec4e82195eda37d2e9", #Vera
-  "u400b0b0dbdcafbd8720cd513df757c7e", #Nita
-  "u660460365abd4a2ff3191b025831c64f", #Vitri
-  "ua4dba8a4b5e291b62aef9192999ffd70", #Vira
-  "u8f8179e37a1c9da4fc36853b3fc7c9ec", #Lion
-  "ud6f594e283cccf71d35e247e0a0c35cc"] #Bunda
+  "u6b34b703cbc5fc83cd1e5b6832a05352", #Vera
+  #"", #Nita
+  #"", #Vitri
+  #"", #Vira
+  #"", #Lion
+  #""] #Bunda
 
 groupList=[
-    "c483ce06d735c647d124d987517b93c04", #Power Rangers
-    "c3454bc445d166960b8a1089c4747e882", #VROne
-    "c25f3bae6ef89374c1e1d64307972f2cc"] #Goblin Hunter Team
+    #"", #Power Rangers
+    #"", #VROne
+    #""] #Goblin Hunter Team
     #"", #Pasukan 1
     #"", #CSCI
     #""] #Event1
@@ -325,7 +326,7 @@ Ready:
 
 
 Minat? Silahkan PM!
-Idline: http://line.me/ti/p/~4dlantobing""",
+Idline: http://line.me/ti/p/~4dlantobing\nhttp://line.me/ti/p/~yudi_std02""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":True,
@@ -339,7 +340,7 @@ Idline: http://line.me/ti/p/~4dlantobing""",
     'Leave':{},    
     "Sider":{},
     "BlGroup":{},
-    "commentLike":"🌟Autolike By 🌟\n✰Fadlan✰\nP҉ o҉ w҉ e҉ r҉  R҉ a҉ n҉ g҉ e҉ r҉ s҉ ",
+    "commentLike":"🌟Autolike By 🌟\n✰http://line.me/ti/p/~yudi_std02✰\nWAHYUDI",
     "winvite" :True,
     "winvite2" :True,
     "winvite3" :True,
@@ -1182,7 +1183,7 @@ def bot(op):
                     cl.sendText(msg.to,"Protect List is empty")
                   else:
                     cl.sendText(msg.to,"Tunggu...")
-                    mc = "╔════════════════\n║⭐Group On Protected⭐\n║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓\n"
+                    mc = "╔════════════════\n║⭐Group Team On Protected⭐\n║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓\n"
                     for mi_d in groupList:
                       mc += "║[★]" + cl.getGroup(mi_d).name + "\n"
                     cl.sendText(msg.to,mc)
@@ -1844,13 +1845,21 @@ def bot(op):
 
               elif msg.text in ["Creator","Owner"]:
                 msg.contentType = 13
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
+                cl.sendText(msg.to,"======================")
+                cl.sendText(msg)
+                cl.sendText(msg.to,"==||Fadlan||==")
+                cl.sendText(msg.to,"======================")
+                
+              elif msg.text in ["Creator2","Owner"]:
+                msg.contentType = 13
                 msg.contentMetadata = {'mid': 'u1112a364f49ad61d6ca5ec5bc9d6d375'}
                 cl.sendText(msg.to,"======================")
                 cl.sendText(msg)
                 cl.sendText(msg.to,"==||Fadlan||==")
                 cl.sendText(msg.to,"======================")
 
-              elif msg.text in ["Creator2","Owner2"]:
+              elif msg.text in ["Creator3","Owner2"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': 'ued156c86ffa56024c0acba16f7889e6d'}
                 cl.sendText(msg.to,"======================")
@@ -1858,7 +1867,7 @@ def bot(op):
                 cl.sendText(msg.to,"==||Hanavy Koplaxs||==")
                 cl.sendText(msg.to,"======================")
 
-              elif msg.text in ["Creator3","Owner3"]:
+              elif msg.text in ["Creator4","Owner3"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': 'u88cd7ee9fd691d6306e5e19be5d16f69'}
                 cl.sendText(msg.to,"======================")
@@ -1995,7 +2004,7 @@ def bot(op):
 
               elif msg.text.lower() == 'crashh':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u1112a364f49ad61d6ca5ec5bc9d6d375',"}
+                msg.contentMetadata = {'mid': "u6b34b703cbc5fc83cd1e5b6832a05352',"}
                 cl.sendMessage(msg)
 
               elif "Block @" in msg.text:
